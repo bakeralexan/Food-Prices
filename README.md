@@ -28,11 +28,11 @@ Here is the data from the [Quarterly Food-at-Home Price Database] (https://www.e
 [Here is the cleaned data](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/BRFSS%20proportionsv2.dta)
 
 ## Methodology
-I first had to make all of my BRFSS variables categorical, binary variables. I then used the _svyset_ to set the appropriate weights and let STATA know that I was working with survey data. After that, I used _svy: proportion_ to make proportions of all of my variables from the BRFSS dataset to aggreggate them at the state level. I then exported my output to excel to use excel to combine the USDA and CDC datasets at the state level. I then ran _kdensity_, _histogram_, and _tabstat_ to generate descriptive data. Next, for my regressions, I used OLS and panel data random effects and fixed effects. Lastly I ran the _Hausman_ test.
+I first had to make all of my BRFSS variables categorical and binary. I then used the _svyset_ to set the appropriate weights and let STATA know that I was working with survey data. After that, I used _svy: proportion_ to make proportions of all of my variables from the BRFSS dataset to aggreggate them at the state level. I then exported my output to excel to use excel to combine the USDA and CDC datasets at the state level. I then ran _kdensity_, _histogram_, and _tabstat_ to generate descriptive data. Next, for my regressions, I used OLS and panel data random effects and fixed effects. Lastly I ran the _Hausman_ test.
 
 ## Results
 
-Failed to reject the Hausman test for both diabetes (**0.9102**) and obesity ( **0.0935**). 
+I failed to reject the Hausman test for either diabetes (**0.9102**) or obesity ( **0.0935**), as such the random effeccs can be fine to use.
 
 ### Regressions & Visualizations
 
