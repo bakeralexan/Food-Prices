@@ -23,7 +23,7 @@ I first had to make all of my BRFSS variables categorical, binary variables. I t
 
 ## Results
 
-``
+```
 
 1. ![](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Screen%20Shot%202020-11-25%20at%205.27.00%20AM.jpg)
 
