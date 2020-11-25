@@ -32,21 +32,22 @@ I first had to make all of my BRFSS variables categorical and binary. I then use
 
 ## Results
 
-### Regressions & Visualizations
+### Visualizations
 
 ![](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Race%20%26%20Ethnicity%20by%20Year.jpg)
 
 
 <div class='tableauPlaceholder' id='viz1606301456209' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DiabetesbyStateinPercent&#47;Diabetes&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DiabetesbyStateinPercent&#47;Diabetes' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DiabetesbyStateinPercent&#47;Diabetes&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>
-
+<https://public.tableau.com/profile/alexandra.baker#!/vizhome/DiabetesbyStateinPercent/Diabetes?publish=yes>
 
 <div class='tableauPlaceholder' id='viz1606301374169' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ob&#47;ObesitybyStateinPercent&#47;Obesity&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ObesitybyStateinPercent&#47;Obesity' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ob&#47;ObesitybyStateinPercent&#47;Obesity&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>
-
+<https://public.tableau.com/profile/alexandra.baker#!/vizhome/ObesitybyStateinPercent/Obesity?publish=yes>
 
 <div class='tableauPlaceholder' id='viz1606301430900' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;FoodandBeveragesPurchasedbyStateinMillionsofDollars&#47;FoodandBeverage&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FoodandBeveragesPurchasedbyStateinMillionsofDollars&#47;FoodandBeverage' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;FoodandBeveragesPurchasedbyStateinMillionsofDollars&#47;FoodandBeverage&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>
+<https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDollars/FoodandBeverage?:language=en&:display_count=y&publish=yes&:origin=viz_share_link>
 
 
-<https://public.tableau.com/profile/alexandra.baker#!/vizhome/DiabetesbyStateinPercent/Diabetes?publish=yes>
+### Regressions
 
 I failed to reject the Hausman test for either diabetes (**0.9102**) or obesity ( **0.0935**), as such the random effeccs can be fine to use.
 
