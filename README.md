@@ -23,6 +23,7 @@ I first had to make all of my BRFSS variables categorical, binary variables. I t
 
 ## Results
 
+Failed to reject the Hausman test for both diabetes (**0.9102**) and obesity ( **0.0935**). 
 
 ### Regressions & Visualizations
 
