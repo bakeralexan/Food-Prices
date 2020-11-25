@@ -19,7 +19,7 @@ Here are the BRFSS Codebooks for this study:
 Here is the data from the [Quarterly Food-at-Home Price Database] (https://www.ers.usda.gov/data-products/quarterly-food-at-home-price-database/) from the USDA ERS.
 
 ## Methodology
-I first had to make all of my BRFSS variables categorical, binary variables. I then used the svyset to set the appropriate weights and let STATA know that I was working with survey data. After that, I used svy: proportion to make proportions of all of my variables from the BRFSS dataset to aggreggate them at the state level. I then exported my output to excel to use excel to combine the USDA and CDC datasets at the state level. I then ran kdensity, histograms, and tabstat to generate descriptive data. Next, for my regressions, I used OLS, panel data random effects and fixed effects. Lastly I ran the Hausman test.
+I first had to make all of my BRFSS variables categorical, binary variables. I then used the _svyset_ to set the appropriate weights and let STATA know that I was working with survey data. After that, I used _svy: proportion_ to make proportions of all of my variables from the BRFSS dataset to aggreggate them at the state level. I then exported my output to excel to use excel to combine the USDA and CDC datasets at the state level. I then ran _kdensity_, _histogram_, and _tabstat_ to generate descriptive data. Next, for my regressions, I used OLS and panel data random effects and fixed effects. Lastly I ran the _Hausman_ test.
 
 ## Results
 
@@ -30,9 +30,13 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
-![](Race%20&%20Ethnicity%20by%20Year.gph)
 ```
+
+
+![](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Screen%20Shot%202020-11-25%20at%205.27.00%20AM.jpg)
+
+https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Race%20%26%20Ethnicity%20by%20Year.png
+
 
 
 
