@@ -35,7 +35,9 @@ Syntax highlighted code block
 
 ![](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Screen%20Shot%202020-11-25%20at%205.27.00%20AM.jpg)
 
-https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Race%20%26%20Ethnicity%20by%20Year.png
+![](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Screen%20Shot%202020-11-25%20at%205.30.27%20AM.jpg)
+
+![](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Race%20%26%20Ethnicity%20by%20Year.jpg)
 
 
 
