@@ -22,7 +22,9 @@ Here is the data from the [Quarterly Food-at-Home Price Database] (https://www.e
 
 ### Cleaned Data
 [Here is the cleaned data log output](BRFSSproportionsv2.smcl)
+
 [Here is the cleaned data Do file](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/BRFSS%20proportionsv2.do)
+
 [Here is the cleaned data](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/BRFSS%20proportionsv2.dta)
 
 ## Methodology
