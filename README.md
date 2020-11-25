@@ -51,7 +51,7 @@ https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDol
 
 ### Regressions
 
-I failed to reject the Hausman test for either diabetes (**0.9102**) or obesity ( **0.0935**), as such the random effeccs can be fine to use.
+I failed to reject the Hausman test for either diabetes (**0.9102**) or obesity ( **0.0935**), as such the random effects can be fine to use.
 
 ![](https://github.com/bakeralexan/Pepperdine-2020-Econometrics/blob/main/Screen%20Shot%202020-11-25%20at%205.27.00%20AM.jpg)
 
