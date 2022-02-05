@@ -1,6 +1,6 @@
 # Soda Tax and Public Health
 This is an econometric analysis conducted with excel for data cleaning, stata for data analysis and visualization creation and tableau public for data vizualization creation.
-<a href="page1.html">Page 2</a>
+
 ## Executive summary
 Given the national public health crisis in the US with soaring public health obesity cases, interventions aimed at influencing consumers to make healthy food choices have arisen. This can be done via price manipulation through taxes on unhealthy food and subsidies on healthy food. The implementation tests their efficacy in lessening preventable lifestyle diseases such as obesity and diabetes. This study used 2008 and 2018 data from the BRFSS survey by the CDC and ERS survey by the USDA, aggregated to the state level, to examine the impact of soda taxes on diabetes and obesity outcomes. OLS and panel data regressions were conducted. In this study, the soda taxes did not have any impact on the diabetes or obesity outcomes with coefficients close to zero and no statistical significance. The results of this study imply that a soda tax might not be a sufficient intervention to influence consumer choice in the US to limit unhealthy food choices and effect public health.
 
@@ -68,17 +68,17 @@ One of the limitations of this study was the small sample size, the OLS regressi
 
 
 
-<img src="https://public.tableau.com/profile/alexandra.baker#!/vizhome/DiabetesbyStateinPercent/Diabetes?publish=yes" alt="Diabetes by State in Percent">
+<img src="https://public.tableau.com/profile/alexandra.baker#!/vizhome/DiabetesbyStateinPercent/Diabetes?publish=yes" alt="Diabetes by State in Percent"/>
 
 
 
 
-<img src="https://public.tableau.com/profile/alexandra.baker#!/vizhome/ObesitybyStateinPercent/Obesity?publish=yes" alt="Obesity by State in Percent">
+<img src="https://public.tableau.com/profile/alexandra.baker#!/vizhome/ObesitybyStateinPercent/Obesity?publish=yes" alt="Obesity by State in Percent"/>
 
 
 
 
-<img src="https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDollars/FoodandBeverage?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" alt="Food and Beverages Purchased by State in Millions of Dollars">
+<img src="https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDollars/FoodandBeverage?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" alt="Food and Beverages Purchased by State in Millions of Dollars"/>
 
 
 ### Regressions

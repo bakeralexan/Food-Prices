@@ -1,0 +1,78 @@
+html {
+    font-family: Filson Soft, serif;
+    color:lightsteelblue;
+}
+body {
+    margin: 0;
+    width: 100%;
+    background-color:#F8F8FF;
+}
+.navbar {
+    background-color:rgb(251, 253, 253);
+}
+.container-fluid {
+    background-color:rgb(251, 253, 253);
+    margin: 50px;
+    padding: 5px;
+}
+.card {
+    padding: 10px;
+    margin: 0 auto; 
+    float: none;
+    margin-bottom: 0px;
+    background-color: white;
+
+}
+.title {
+    color: rgb(2, 161, 153);
+    font-family:Garamond, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size-adjust:1em;
+}
+.navbar-brand{
+    background-color:rgb(2, 161, 153);
+    margin:radius;
+}
+.latitude {
+    font-family:Garamond, 'Times New Roman', serif;
+    padding:15px;
+    font-size: 1em;
+    color: white;
+}
+/* .nav-link {
+    color: white;
+} */
+@media (max-width: 480px) {
+    .navbar {
+        background-color:rgb(2, 161, 153);
+        text-align: center;
+    }
+    .navbar li {
+      padding: 10px;
+    }
+    .navbar ul {
+      visibility: visible;
+    }
+    .nav-link {
+        color: white !important;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .navbar {
+        background-color:rgb(2, 161, 153);
+        text-align:center;
+    }
+    .navbar li {
+      padding: 10px;
+    }
+    .navbar ul {
+      visibility: visible;
+    }
+    .nav-link {
+        color: white !important;
+    }
+}
