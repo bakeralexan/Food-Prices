@@ -54,38 +54,56 @@ One of the more surprising results was the strong relationship between female an
 Having a job was statistically significant at the 1% level with a negative relationship for almost all of the regressions for diabetes (see figures 1, 2, & 3). The coefficients for this variable were also somewhat bigger in magnitude than the other variables but not to the point of female variable.
 The Hausman Test (see figures 11 & 12) failed to reject the null hypothesis when comparing the results from the fixed effects regressions and the random effects regressions for both diabetes and obesity. Based on those results, it is better to look at the results from the random effects regression rather than the fixed effects regressions because it would be more reliable.
 
+I failed to reject the Hausman test for either diabetes (**0.9102**) or obesity ( **0.0935**), as such the random effects can be fine to use.
 ### Discussion
 In this study, the soda taxes did not have any impact on the diabetes or obesity outcomes with coefficients close to zero and no statistical significance. Conversely, other variables had stronger predictive powers such as having a job leading to a lessening of diabetes incidence and the same for being female with obesity. Since the primary focus of this study was the soda tax, the findings of this study did not support junk food taxes as an effective intervention. The results mirror what other studies said about it not having enough impact on its own. Also, this type of intervention uses regressive taxation that limits the purchasing power of US constituents, especially those of lower socioeconomic status. If the public health impacts do not improve, it might not be worth it to limit the public in such a way because of the risk of adverse effects like increased food insecurity. That said, the scope of this study was not enough to make any conclusive statements on the issue.
 
 One of the limitations of this study was the small sample size, the OLS regressions only had 51 observations per year and with the combined years in the panel data, it only aggregated to 102 observations. In the future it would be beneficial to attempt this study at the county level although it might be difficult to get BRFSS county level data. Similarly, it would be good to expand the range of years. Initially, this study had chosen to focus on food prices rather than a food price-related intervention. However, there was not such available data at the state level. It would be interesting to see that type of study. Similarly, it would be good to get a more thorough update with more available years of data to compare. There can be a focus on other types of junk food taxes as well. Finally, there was not as much data supporting the efficacy of healthy food subsidies so an inverse of this study would be an interesting direction.
- 
-
 
 ### Visualizations
 
 ##### Race and Ethnicity by Year
-<img src="images/race_and_ethnicity_by_year.png">
+<img src="images/race_and_ethnicity_by_year.png"/>
 
 
-
-<img src="https://public.tableau.com/profile/alexandra.baker#!/vizhome/DiabetesbyStateinPercent/Diabetes?publish=yes" alt="Diabetes by State in Percent"/>
-
-
+<img src="images/F5_Diabetes_by_State_in_Percent.png" alt="Diabetes by State in Percent"/>
+<a href="https://public.tableau.com/profile/alexandra.baker#!/vizhome/DiabetesbyStateinPercent/Diabetes?publish=yes">Figure 5 Diabetes By State Interactive Graphic Link</a> 
 
 
-<img src="https://public.tableau.com/profile/alexandra.baker#!/vizhome/ObesitybyStateinPercent/Obesity?publish=yes" alt="Obesity by State in Percent"/>
+<img src="images/F6_Obesity_by_State_in_Percent.png" alt="Obesity by State in Percent"/>
+<a href="https://public.tableau.com/profile/alexandra.baker#!/vizhome/ObesitybyStateinPercent/Obesity?publish=yes">Figure 6 Obesity By State Interactive Graphic Link</a>
 
 
-
-
-<img src="https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDollars/FoodandBeverage?:language=en&:display_count=y&publish=yes&:origin=viz_share_link" alt="Food and Beverages Purchased by State in Millions of Dollars"/>
+<img src="food_and_beverages.png" alt="Food and Beverages Purchased by State in Millions of Dollars"/><a href="https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDollars/FoodandBeverage?:language=en&:display_count=y&publish=yes&:origin=viz_share_link">Food and Beverages Interactive Graphic Link</a> 
 
 
 ### Regressions
-
-I failed to reject the Hausman test for either diabetes (**0.9102**) or obesity ( **0.0935**), as such the random effects can be fine to use.
-
+Consolidated Diabetes Regression Table
 <img src="images/diabetes_regression_table.png">
-
+Consolidated Obesity Regression Table
 <img src="images/obesity_regression_table.png">
 
+### Appendix
+##### Figure 1
+<img src="images/F1_2008_OLS.png">
+
+#####  Figure 2
+<img src="images/F2_2018_OLS.png">
+
+##### Figure 3
+<img src="images/F3_Panel_Regressions.png">
+
+##### Figure 7
+<img src="images/F7_Correlations.png">
+
+##### Figure 9
+<img src="images/F9_2008_Descriptive_Statistics.png">
+
+##### Figure 10
+<img src="images/F10_2018_Descriptive_Statistics.png">
+
+##### Figure 11
+<img src="images/F11_Hausman_Obesity.png">
+
+##### Figure 12
+<img src="images/F12_Hausman_Diabetes.png">
