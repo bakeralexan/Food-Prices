@@ -74,7 +74,7 @@ One of the limitations of this study was the small sample size, the OLS regressi
 <a href="https://public.tableau.com/profile/alexandra.baker#!/vizhome/ObesitybyStateinPercent/Obesity?publish=yes">Figure 6 Obesity By State Interactive Graphic Link</a>
 
 
-<img src="food_and_beverages.png" alt="Food and Beverages Purchased by State in Millions of Dollars"/><a href="https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDollars/FoodandBeverage?:language=en&:display_count=y&publish=yes&:origin=viz_share_link">Food and Beverages Interactive Graphic Link</a> 
+<img src="images/food_and_beverages.png" alt="Food and Beverages Purchased by State in Millions of Dollars"/><a href="https://public.tableau.com/views/FoodandBeveragesPurchasedbyStateinMillionsofDollars/FoodandBeverage?:language=en&:display_count=y&publish=yes&:origin=viz_share_link">Food and Beverages Interactive Graphic Link</a> 
 
 
 ### Regressions
