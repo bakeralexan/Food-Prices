@@ -1,5 +1,4 @@
 # Soda Tax and Public Health
-![Interactive Website link] (https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/)
 
 <a href="https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/">Here is the interactive website link</a>
 
@@ -28,17 +27,20 @@ The datasets themselves for BRFSS require too much data to download. Instead, he
 
 ### USDA Raw Data
 
-Here is the data from the [Quarterly Food-at-Home Price Database] (https://www.ers.usda.gov/data-products/quarterly-food-at-home-price-database/) from the USDA ERS.
+Here is the data from the [***Quarterly Food-at-Home Price Database***](https://www.ers.usda.gov/data-products/quarterly-food-at-home-price-database/) from the USDA ERS.
 
 ### Cleaned Data
 <a href="stata/BRFSSproportionsv2.smcl">Here is the cleaned data log output</a>
-![Here is the cleaned data log output] (stata/BRFSSproportionsv2.smcl)
+
+[***Here is the cleaned data log output***](https://github.com/bakeralexan/junk_food_and_public_health_econometric_analysis.github.io/stata/BRFSSproportionsv2.smcl)
 
 <a href="stata/BRFSS_proportionsv2.do">Here is the cleaned data Do file</a>
-![Here is the cleaned data Do file] (stata/BRFSS_proportionsv2.do)
+
+[***Here is the cleaned data Do file***](https://github.com/bakeralexan/junk_food_and_public_health_econometric_analysis.github.io/stata/BRFSproportionsv2.do)
 
 <a href="stata/BRFSS_proportionsv2.dta">Here is the cleaned data</a>
-![Here is the cleaned data] (stata/BRFSS_proportionsv2.dta)
+
+[***Here is the cleaned data***](https://github.com/bakeralexan/junk_food_and_public_health_econometric_analysis.github.io/stata/BRFSSproportionsv2.dta)
 ## Methodology
 I first had to make all of my BRFSS variables categorical and binary. I then used the _svyset_ to set the appropriate weights and let STATA know that I was working with survey data. After that, I used _svy: proportion_ to make proportions of all of my variables from the BRFSS dataset to aggreggate them at the state level. I then exported my output to excel to use excel to combine the USDA and CDC datasets at the state level. I then ran _kdensity_, _histogram_, and _tabstat_ to generate descriptive data. Next, for my regressions, I used OLS and panel data random effects and fixed effects. Lastly I ran the _Hausman_ test.
 
