@@ -10,7 +10,7 @@ Given the national public health crisis in the US with soaring public health obe
 
 
 ## Background
-There are many studies that show that food prices have an impact on public health. In the case of obesity, the literature shows that while there are usually small impacts of food prices on weight, there can be larger impacts on people of lower socioeconomic status and people who are on the borderline of being overweight. [***(Powell & Chaloupka, 2009)***](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2879182/) That said, the impact of prices remains consistent and is statistically significant even when comparing lower-end versus higher-end grocery stores. The price of healthy and junk food matter more than the type of store. It also holds true for store distance. [***Ghosh-Dastidar et al., 2014***](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4205193/) The lowering in food prices for calorie-dense meals can increase body fat percentage even if body weight itself does not change much. [***Lu & Goldman, 2010***] (https://www.nber.org/system/files/working_papers/w15720/w15720.pdf) In the case of diabetes, there are not as many studies that examine the impact of prices. One study found that high prices of healthy food led to higher blood sugar, especially for low-income people; dairy was particularly associated with high blood sugar. [***Anekwe & Rahkovsky, 2018***] (https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2013.301661r) Taxes on unhealthy food and subsidies on healthy food can even be effective in preventing deaths from diabetes, strokes, and coronary heart disease. [***Penevalo et al., 2017***] (https://link.springer.com/article/10.1186/s12916-017-0971-9) The impacts were more pronounced depending on the magnitude of the price change.
+There are many studies that show that food prices have an impact on public health. In the case of obesity, the literature shows that while there are usually small impacts of food prices on weight, there can be larger impacts on people of lower socioeconomic status and people who are on the borderline of being overweight. [***Powell & Chaloupka, 2009***](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2879182/) That said, the impact of prices remains consistent and is statistically significant even when comparing lower-end versus higher-end grocery stores. The price of healthy and junk food matter more than the type of store. It also holds true for store distance. [***Ghosh-Dastidar et al., 2014***](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4205193/) The lowering in food prices for calorie-dense meals can increase body fat percentage even if body weight itself does not change much. [***Lu & Goldman, 2010***](https://www.nber.org/system/files/working_papers/w15720/w15720.pdf) In the case of diabetes, there are not as many studies that examine the impact of prices. One study found that high prices of healthy food led to higher blood sugar, especially for low-income people; dairy was particularly associated with high blood sugar. [***Anekwe & Rahkovsky, 2018***](https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2013.301661r) Taxes on unhealthy food and subsidies on healthy food can even be effective in preventing deaths from diabetes, strokes, and coronary heart disease. [***Penevalo et al., 2017***](https://link.springer.com/article/10.1186/s12916-017-0971-9) The impacts were more pronounced depending on the magnitude of the price change.
 
 Although the most recent studies have looked at data from before 2017, this study hopes to provide an update on prior knowledge, with more recent 2018 data, to examine if the trends hold true for diabetes and obesity with food prices.
 
@@ -20,10 +20,10 @@ This study uses self-report data from the long running BRFSS study administered 
 
 ### BRFSS Codebooks
 
-The datasets themselves for BRFSS require too much data to download. Instead, here are the BRFSS Codebooks for this study: 
-- [**1998**](https://www.cdc.gov/brfss/annual_data/1998/pdf/Codebook_98.pdf) 
-- [**2008**](https://www.cdc.gov/brfss/annual_data/2008/pdf/codebook08.pdf) 
-- [**2018**](https://www.cdc.gov/brfss/annual_data/2018/pdf/codebook18_llcp-v2-508.pdf)
+The datasets themselves for BRFSS require too much data to download. Instead, here are the US Census BRFSS Codebooks for this study: 
+- [**1998 BRFSS Codebook**](https://www.cdc.gov/brfss/annual_data/1998/pdf/Codebook_98.pdf) 
+- [**2008  BRFSS Codebook**](https://www.cdc.gov/brfss/annual_data/2008/pdf/codebook08.pdf) 
+- [**2018  BRFSS Codebook**](https://www.cdc.gov/brfss/annual_data/2018/pdf/codebook18_llcp-v2-508.pdf)
 
 ### USDA Raw Data
 
@@ -32,15 +32,10 @@ Here is the data from the [***Quarterly Food-at-Home Price Database***](https://
 ### Cleaned Data
 <a href="stata/BRFSSproportionsv2.smcl">Here is the cleaned data log output</a>
 
-[***Here is the cleaned data log output***](https://github.com/bakeralexan/junk_food_and_public_health_econometric_analysis.github.io/stata/BRFSSproportionsv2.smcl)
-
 <a href="stata/BRFSSproportionsv2.do">Here is the cleaned data Do file</a>
-
-[***Here is the cleaned data Do file***](https://github.com/bakeralexan/junk_food_and_public_health_econometric_analysis.github.io/stata/BRFSproportionsv2.do)
 
 <a href="stata/BRFSSproportionsv2.dta">Here is the cleaned data</a>
 
-[***Here is the cleaned data***](https://github.com/bakeralexan/junk_food_and_public_health_econometric_analysis.github.io/stata/BRFSSproportionsv2.dta)
 ## Methodology
 I first had to make all of my BRFSS variables categorical and binary. I then used the _svyset_ to set the appropriate weights and let STATA know that I was working with survey data. After that, I used _svy: proportion_ to make proportions of all of my variables from the BRFSS dataset to aggreggate them at the state level. I then exported my output to excel to use excel to combine the USDA and CDC datasets at the state level. I then ran _kdensity_, _histogram_, and _tabstat_ to generate descriptive data. Next, for my regressions, I used OLS and panel data random effects and fixed effects. Lastly I ran the _Hausman_ test.
 
