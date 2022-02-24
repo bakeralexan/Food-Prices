@@ -1,28 +1,39 @@
 ## This is a static website that uses javascript
 
 To view the interactive content, please download the repository and run it as a local server.
+
 <img src="images/download.png">
 
 
-In Bash do the following commands:
+In Bash or Terminal input the following commands:
 
 To navigate to the repository
+
 ```cd junk_food_and_public_health_econometric_analysis.github.io``` 
+
 <img src="images/bash.png">
 
 
 To initialize Local Host with Python
 ```python -m http.server```
+
+or
+
+
 ```python3 -m http.server```
+
 <img src="images/server.png">
 
 
 Type the local host given to the URL bar in your web browser
+
 <img src="images/localhost.png">
 
 
 Then you will see the static website with its interactive images
+
 <img src="images/map.png">
+
 <img src="images/interactive.png">
 
 # Soda Tax and Public Health
