@@ -3,9 +3,9 @@ html {
     color:lightsteelblue;
 }
 body {
-    margin: 0;
     width: 100%;
     background-color:#F8F8FF;
+    padding-bottom: auto;
 }
 .navbar {
     background-color:rgb(251, 253, 253);
@@ -33,15 +33,6 @@ body {
     background-color:rgb(2, 161, 153);
     margin:radius;
 }
-.latitude {
-    font-family:Garamond, 'Times New Roman', serif;
-    padding:15px;
-    font-size: 1em;
-    color: white;
-}
-/* .nav-link {
-    color: white;
-} */
 @media (max-width: 480px) {
     .navbar {
         background-color:rgb(2, 161, 153);
