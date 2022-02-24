@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Soda Tax and Public Health</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin="" />
+  <link rel="stylesheet" type="text/css"href="templates/../static/css/styles.css">
+</head>
+
+<body class=".bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="landing.html">Junk Food and Public Health</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link btn dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Table of Contents
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a href="method.html">Methodology</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="discussion.html">Discussion</a></li>
+            <li><a href="appendix.html">Appendix</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-12">
+        <div class="card">
+          <h1 class="title">Project Description</h1>
+          <div class="card-body">
+            <p class="category">This is an econometric analysis conducted with excel for data cleaning, stata for data analysis and visualization creation and tableau public for data vizualization creation.</p>
+          </div>
+        </div>
+        <div class="card">
+            <h1 class="title">Executive Summary</h1>
+            <div class="card-body">
+ 
+              <p class="category">Given the national public health crisis in the US with soaring public health obesity cases, interventions aimed at influencing consumers to make healthy food choices have arisen. This can be done via price manipulation through taxes on unhealthy food and subsidies on healthy food. The implementation tests their efficacy in lessening preventable lifestyle diseases such as obesity and diabetes. This study used 2008 and 2018 data from the BRFSS survey by the CDC and ERS survey by the USDA, aggregated to the state level, to examine the impact of soda taxes on diabetes and obesity outcomes. OLS and panel data regressions were conducted. In this study, the soda taxes did not have any impact on the diabetes or obesity outcomes with coefficients close to zero and no statistical significance. The results of this study imply that a soda tax might not be a sufficient intervention to influence consumer choice in the US to limit unhealthy food choices and effect public health.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h1 class="title">Background</h1>
+            <div class="card-body">
+              <p class="category">There are many studies that show that food prices have an impact on public health. In the case of obesity, the literature shows that while there are usually small impacts of food prices on weight, there can be larger impacts on people of lower socioeconomic status and people who are on the borderline of being overweight. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2879182/">Powell & Chaloupka, 2009</a> That said, the impact of prices remains consistent and is statistically significant even when comparing lower-end versus higher-end grocery stores. The price of healthy and junk food matter more than the type of store. It also holds true for store distance. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4205193/">Ghosh-Dastidar et al., 2014</a> The lowering in food prices for calorie-dense meals can increase body fat percentage even if body weight itself does not change much. <a href="https://www.nber.org/system/files/working_papers/w15720/w15720.pdf">Lu & Goldman, 2010</a> In the case of diabetes, there are not as many studies that examine the impact of prices. One study found that high prices of healthy food led to higher blood sugar, especially for low-income people; dairy was particularly associated with high blood sugar. <a href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2013.301661r">Anekwe & Rahkovsky, 2018</a> Taxes on unhealthy food and subsidies on healthy food can even be effective in preventing deaths from diabetes, strokes, and coronary heart disease. <a href="https://link.springer.com/article/10.1186/s12916-017-0971-9">Penevalo et al., 2017</a> The impacts were more pronounced depending on the magnitude of the price change. Although the most recent studies have looked at data from before 2017, this study hopes to provide an update on prior knowledge, with more recent 2018 data, to examine if the trends hold true for diabetes and obesity with food prices.</p>
+            </div>
+          </div>
+          <div class="card" id="map">
+            <h1 class="title">Interactive Map</h1>
+          </div>
+          <div class="card">
+            <h1 class="title">Data Description</h1>
+            <div class="card-body">
+              
+              <p class="category">This study uses self-report data from the long running BRFSS study administered by the Center for Disease Control (CDC). It uses 1998, 2008, and 2018 data including the control variables for sex, income, education, employment, physical activity, race, and ethnicity. I have also repeated the regressions with diabetes and obesity as the dependent variables. The independent variable, food and beverages purchased for off-premises consumption in millions of dollars, comes from the United States Department of Agriculture's (USDA) long running ERS study. The USDA data comes at the state level whereas the BRFSS data had to be aggregated manually at the state level.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h1 class="title">BRFSS Codebooks</h1>
+            <div class="card-body">
+
+              <p class="category">The datasets themselves for BRFSS require too much data to download. Instead, here are the BRFSS Codebooks for this study: 
+                <ul>
+                  <a href="https://www.cdc.gov/brfss/annual_data/1998/pdf/Codebook_98.pdf">- 1998 BRFSS Codebook</a>
+                  <br>
+                  <br>
+                  <a href="https://www.cdc.gov/brfss/annual_data/2008/pdf/codebook08.pdf">- 2008 BRFSS Codebook</a>
+                  <br>
+                  <br>
+                  <a href="https://www.cdc.gov/brfss/annual_data/2018/pdf/codebook18_llcp-v2-508.pdf">- 2018 BRFSS Codebook</a>
+                </ul>
+              </p>
+
+            </div>
+          </div>
+          <div class="card">
+            <h1 class="title">USDA Raw Data</h1>
+            <div class="card-body">
+
+              <p class="category">Here is the data from the [Quarterly Food-at-Home Price Database] (https://www.ers.usda.gov/data-products/quarterly-food-at-home-price-database/) from the USDA ERS.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h1 class="title">Cleaned Data</h1>
+            <div class="card-body">
+
+              <p class="category">
+                <a href="templates/../Resources/stata/BRFSSproportionsv2.smcl">- Here is the cleaned data log output</a>
+                <br>
+                <br>
+                <a href="templates/../Resources/stata/BRFSSproportionsv2.do">- Here is the cleaned data Do file</a>
+                <br>
+                <br>
+                <a href="templates/../Resources/stata/BRFSSproportionsv2.dta">- Here is the cleaned data</a>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+<!-- D3 JavaScript -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!-- API key -->
+<script type="text/javascript" src="templates/../static/js/config.js"></script>
+<!-- Our JavaScript -->
+<script type="text/javascript" src="templates/../static/js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+
