@@ -1,6 +1,11 @@
-## This is a static website that uses javascript
+## View Website
+The website is now live. To view the interactive content, click the following (website link.)[https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/]
+<a href="https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/
+">https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/
+</a>
 
-To view the interactive content, please download the repository and run it as a local server.
+## To view as a static website
+Another option to view the content is as a static website. To do so, download the repository and run it as a local server.
 
 <img src="images/download.png">
 
