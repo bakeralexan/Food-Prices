@@ -1,5 +1,6 @@
 ## View Website
-The website is now live. To view the interactive content, click the following (website link.)[https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/]
+The website is now live. To view the interactive content, click the following <a href="https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io">website link.</a>
+
 <a href="https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/
 ">https://bakeralexan.github.io/junk_food_and_public_health_econometric_analysis.github.io/
 </a>
